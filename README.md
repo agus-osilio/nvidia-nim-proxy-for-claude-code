@@ -8,6 +8,13 @@ dependencies, no hidden code: everything it does lives in `nim_proxy.py`
 NVIDIA NIM offers **40 free requests/minute** with high-end open coding models
 (Kimi K2, Devstral, GLM, MiniMax, etc.) — **no credit card required**.
 
+> [!NOTE]
+> NVIDIA's free tier is intended for development, research, and testing. Before
+> using it, take a moment to review the
+> [NIM FAQ](https://docs.api.nvidia.com/nim/docs/product) and NVIDIA's
+> [Technology Access Terms of Use](https://developer.nvidia.com/legal/terms) to
+> make sure your use case is covered.
+
 ---
 
 ## Table of contents
@@ -236,8 +243,12 @@ which is handy for confirming traffic is flowing and which model is being used.
 - **Images**: Supported with multimodal models (e.g. `kimi-k2.5`). Images inside
   tool results are not forwarded (the OpenAI tool-message format only accepts text).
 - **Tool calling**: Requires a model that supports function calling. All the
-  models listed above support it.
+  models in the [Changing the model](#changing-the-model) table support it.
 - **Token counting**: The `count_tokens` endpoint returns a rough estimate
   (~4 characters per token), not an exact tokenizer count.
-- **Not the real Claude**: NIM models are open-source, not Anthropic's Claude
-  models. Reasoning may differ on complex tasks.
+- **Open models & usage terms**: NIM serves open-source models, not Anthropic's
+  Claude, so responses may differ on complex tasks. The free tier is intended
+  for development, research, and testing — if your use case is different, it's
+  worth reviewing the [NIM FAQ](https://docs.api.nvidia.com/nim/docs/product)
+  (development vs. production) and NVIDIA's
+  [Technology Access Terms of Use](https://developer.nvidia.com/legal/terms).

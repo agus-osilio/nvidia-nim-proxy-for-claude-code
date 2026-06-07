@@ -80,14 +80,22 @@ accounting.
 ## Installation
 
 ```bash
-# 1. Install dependencies (only 4)
+# 1. Clone the repo
+git clone https://github.com/agus-osilio/nvidia-nim-proxy-for-claude-code.git
+cd nvidia-nim-proxy-for-claude-code
+
+# 2. (Recommended) Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+
+# 3. Install dependencies (only 4)
 pip install -r requirements.txt
 
-# 2. Create your .env from the template
-cp .env.example .env      # Windows: copy .env.example .env
-
-# 3. Edit .env and paste your NVIDIA_NIM_API_KEY
+# 4. Create your .env from the template
+cp .env.example .env             # Windows: copy .env.example .env
 ```
+
+Then open `.env` and add your NIM API key — see [Configuration](#configuration) below.
 
 ---
 

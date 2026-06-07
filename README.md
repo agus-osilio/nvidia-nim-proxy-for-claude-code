@@ -1,4 +1,4 @@
-# nim_proxy — Claude Code → NVIDIA NIM
+# NVIDIA NIM Proxy for Claude Code
 
 A minimal, auditable proxy that lets you run **Claude Code** against the free
 **NVIDIA NIM** API instead of Anthropic's paid models. No unnecessary

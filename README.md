@@ -3,12 +3,12 @@
 A minimal, auditable proxy that lets you run **Claude Code** against the free
 **NVIDIA NIM** API instead of Anthropic's paid models. No unnecessary
 dependencies, no hidden code: everything it does lives in `nim_proxy.py`
-(~300 commented lines).
+(~720 commented lines).
 
 NVIDIA NIM offers **40 free requests/minute** with high-end open coding models
 (Kimi K2, Devstral, GLM, MiniMax, etc.) — **no credit card required**.
 
-> [!NOTE]
+> [!IMPORTANT]
 > NVIDIA's free tier is intended for development, research, and testing. Before
 > using it, take a moment to review the
 > [NIM FAQ](https://docs.api.nvidia.com/nim/docs/product) and NVIDIA's
@@ -209,7 +209,7 @@ Full catalog: https://build.nvidia.com/models
 
 ```
 nim_proxy/
-├── nim_proxy.py      # All the proxy code (~300 lines, fully commented)
+├── nim_proxy.py      # All the proxy code (~720 lines, fully commented)
 ├── .env.example      # Configuration template
 ├── requirements.txt  # Dependencies: fastapi, uvicorn, httpx, python-dotenv
 └── README.md         # This file
